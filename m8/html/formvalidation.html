@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>  
+<meta charset="utf-8">  
+<title>Registration Form</title>  
+<meta name="keywords" content="Form Validation, registration form, Software architecture" />  
+<meta name="description" content="This document is a Form Validation." />  
+
+<!-- Include css document to style page -->
+<link rel='stylesheet' href='validationForm.css' type='text/css' />
+
+<!-- Include JS document to validate form -->  
+<script src="validationForm.js"></script>  
+</head>  
+
+<!-- Start page body and focus on the name field -->
+<body onload="document.registrationForm.name.focus();">  
+  <div class="center-div">
+    
+    <!-- Start form -->
+    <form method="POST" action="http://www.it.murdoch.edu.au/cgi-bin/reply1.pl"  name="registrationForm" onsubmit="return funcValidateForm(this)">  
+      <ul>  
+        <li><label>FORM</label></li>  
+        <li><input type="text"  name="name"  placeholder="First name"/></li>  
+        <li><input type="text" name="surname"  placeholder="Last name" /></li> 
+        <li><input type="text" name="email"  placeholder="email"/></li>   
+        <li><input type="text" name="dob" placeholder="Date of birth"/></li>  
+        <li><select name="sport">  
+        
+        <option selected="" value="Default">Select your favourite sport</option>  
+        <option value="Athletics">Athletics</option>  
+        <option value="Basketball">Basketball</option>  
+        <option value="Cricket">Cricket</option>  
+        <option value="Football">Football</option>  
+        <option value="Hockey">Hockey</option>
+        <option value="Swimming">Swimming</option> 
+        <option value="Tennis">Tennis</option>   
+        </select></li>  
+        <li><input  type="submit"  name="submit" value="Submit" id="butSubmit"/></li>  
+      </ul>  
+    </form> <!-- End form -->
+  </div>  
+</body><!-- End body page -->  
+
+</html> 

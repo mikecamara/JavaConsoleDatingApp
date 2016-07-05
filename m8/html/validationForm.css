@@ -1,0 +1,112 @@
+
+/* 
+    Mike Gomes Camara
+    ID: 32783992
+    Date: 12/April/2016
+    Style CSS of my form 
+*/
+
+/* All characteres become thinner */
+html { 
+  -webkit-font-smoothing: antialiased; 
+}
+
+/* Change font style of label */
+label {  
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+color: #19724d;
+width: 100%;
+font-size:1.5em; 
+}  
+
+/* Remove dot list from form */
+form li {  
+list-style: none;  
+margin-bottom: 10px;  
+}  
+    
+/* Change the entire page color to green */
+body {
+	background-color: #2ccb89;
+}
+  
+/* Change the placeholder text color */
+::-webkit-input-placeholder {
+   color: #186d49;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #186d49;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #186d49;  
+}
+
+:-ms-input-placeholder {  
+   color: #186d49;  
+}
+
+/* Style DIV that holds the form in the page document */
+.center-div
+{
+  margin: 5%;
+  width:  100%;
+  height:  100%;
+  border-radius: 3px;
+  background-color: #2ccb89;
+
+}
+
+/* Add shadow when user click on input fields */
+input:focus { 
+    outline: none !important;
+    box-shadow: 7px 7px 0px #2ac082;
+}
+
+/* Style input text field */
+input[type=text] {
+    padding:15px;
+    margin-bottom: 10px; 
+    border:0px none #ccc; 
+    font-size:1.5em; 
+    background-color: #28b57a;
+    color: #003f25;
+}
+
+/* Style submit button */
+input[type="submit"] {
+    padding:18px 50px; 
+    cursor:pointer;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    border-color: rgba(24, 109, 63, 1.0);
+    background-color:rgba(44, 203, 137, 0.0);
+    border-style: solid;
+    font-size: 1.5em;
+    color: #003f25;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+/* Change color of submit button when hover */
+input[id=butSubmit]:hover{
+     background-color: #186d49;
+}
+
+/* Add style for the sports input field */
+select{
+    border: none;
+    box-shadow: none;
+    background-color:  #28b57a;
+    background-image: none;
+    font-size: 1.4em;
+    color: #186d49;
+  
+}
+
+/* Add shadow when user click on sports input fields */
+select:focus {
+    outline: none !important;
+    box-shadow: 7px 7px 0px #2ac082;
+}
